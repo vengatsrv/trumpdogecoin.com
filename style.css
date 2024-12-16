@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #D32F2F; /* TrumpDoge Red */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #D32F2F;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    animation: slideIn 2s ease-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #FFD700; /* Gold */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #FFA500;
+}
+
+/* Game Section */
+.game-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+#doge-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#doge {
+    width: 150px;
+    cursor: pointer;
+    animation: moveDoge 3s linear infinite;
+}
+
+#scoreboard {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDoge {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
