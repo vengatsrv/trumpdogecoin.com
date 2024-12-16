@@ -20,13 +20,18 @@
     <!-- Game Section -->
     <section id="game" class="game-section">
         <h2>Click the TrumpDoge!</h2>
-        <p>Click on the TrumpDoge image to earn points. How many can you get?</p>
+        <p>Click on the TrumpDoge image to earn points. How many can you get in 10 seconds?</p>
         <div id="doge-container">
-            <!-- Updated with the provided image URL -->
+            <!-- TrumpDoge Image -->
             <img id="doge" src="https://i.ibb.co/bFjy2xr/trumpdoge.png" alt="TrumpDoge" />
         </div>
         <div id="scoreboard">
             <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="time">10</span> seconds</p>
+        </div>
+        <div id="game-over" class="hidden">
+            <p>Game Over! Your final score is: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
         </div>
     </section>
 
